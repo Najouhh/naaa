@@ -1,15 +1,16 @@
-import React from 'react'
-import {Route, Routes} from 'react-router-dom';
-import Contact from './Components/Contact';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Header from './Components/Header';
-import Hem from './Components/Hem';
+
 const App = () => {
   return (
-  <>
-  <Header/>
-{/* npm */}
-  </>
-  )
+    <>
+      <Header />
+      <div>
+        <Outlet /> {/* Renders the matched child route */}
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
