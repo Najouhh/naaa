@@ -7,12 +7,7 @@ const App = () => {
   return (
   <>
   <Header/>
-<Routes>
-        <Route exact path="/" element={<Hem />} />
-       
-        <Route path="/contact" element = {<Contact />} />
-      </Routes>
-  
+{/* npm */}
   </>
   )
 }
